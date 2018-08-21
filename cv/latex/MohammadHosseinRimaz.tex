@@ -1,0 +1,142 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[letterpaper]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{tabulary}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+
+% Set your name here
+\def\name{Mohammad Hossein Rimaz}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+\def\footerlink{http://mhrimaz.com}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {rimaz, resume, cv},
+  pdftitle = {\name: Mohammad Hossein Rimaz Curriculum Vitae},
+  pdfsubject = {Mohammad Hossein Rimaz Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.25in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+\begin{document}
+
+% Place name at left
+{\huge \name}
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\vspace{0.25in}
+
+\begin{minipage}{0.45\linewidth}
+  Tavanir St., Vali-Asr St. \\
+  Tehran, Tehran $1434885481$, Iran
+\end{minipage}
+\begin{minipage}{0.45\linewidth}
+  \begin{tabular}{ll}
+    Email: & \href{mailto:mhrimaz@acm.org}{\tt mhrimaz@acm.org} \\
+    Phone: & $+98~933~888~0256$ \\
+    Nationality: & Iranian \\
+    Date of Birth: & 18/01/1996  \\
+    Homepage: & \href{http://mhrimaz.com}{\tt http://mhrimaz.com} \\
+    GitHub: & \href{https://mhrimaz.github.io}{\tt https://github.com/mhrimaz} 
+  \end{tabular}
+\end{minipage}
+
+
+\section*{Education}
+
+{\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{l l}
+2014--2019(expected) & BSc, Software Engineering, K. N. Toosi University of Technology,\\
+ & Major GPA: 15.79/20 (top 15\% in the class) \\
+ & Selected Courses: Java, Software Testing, Software Engineering. (all grades 20/20)\\
+ & Advisor: Babak Nasersharif
+\end{tabular}
+}
+
+\section*{Technical Skills}
+
+
+
+\section*{Teaching Experience}
+
+
+
+\section*{Projects}
+
+\section*{Certificates}
+
+\section*{Professional Membership}
+
+\begin{itemize}
+\item Association for Computing Machinery (2017-present). Membership Number: 7348433
+\end{itemize}
+
+\section*{Community Outreach}
+
+{\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{l l}
+May 2018-present & Chairman of ACM Student chapter \\ & K. N. Toosi University of Technology. Chapter Website: \href{https://kntu.acm.org}{\tt https://kntu.acm.org} 
+\\
+November 2016-2017 & Chairman of Student's scientific chapter \\ & K. N. Toosi University of Technology.
+\end{tabular}
+
+
+\end{document}
